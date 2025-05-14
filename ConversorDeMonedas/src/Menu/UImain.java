@@ -9,7 +9,7 @@ public class UImain {
 
     public static void ppalMenu() {
         System.out.println("**************************************************\n" +
-                "Bienvenido a tu app para calcular cambio de monedas\n" +
+                "Menu principal\n" +
                 "1. Ver tipos de moneda\n" +
                 "2. Calcular tipo de cambio\n" +
                 "3. Salir\n" +
@@ -17,7 +17,7 @@ public class UImain {
 
         int menuCtrl = 0;
 
-        do {
+        while(menuCtrl == 0) {
             Scanner keyboardInput = new Scanner(System.in);
             menuCtrl = keyboardInput.nextInt();
 
@@ -29,16 +29,13 @@ public class UImain {
                 case 2:
                     Calculos.tipoDeCambio();
                     UImain.ppalMenu();
-                    menuCtrl = 0;
                     break;
                 case 3:
                     System.out.println("Finalizando app...");
-                    menuCtrl = 0;
-                    break;
-                default:
+                    System.out.println(menuCtrl);
                     break;
             }
-        }while(menuCtrl != 0);
+        }
     }
 
 }

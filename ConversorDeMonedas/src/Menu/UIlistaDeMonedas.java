@@ -11,18 +11,16 @@ public class UIlistaDeMonedas {
         System.out.println("\nPuedes ingresar cualquier tipo de moneda " +
                 "usando su abreviatura\n" +
                 "**************************************************\n");
-        System.out.println("MXN\n" +
-                "USD\n" +
-                "EUR\n" +
+        System.out.println("Abreviatura = descripción\n" +
+                "MXN = pesos mexicanos\n" +
+                "USD = dolares estadounidenses\n" +
+                "EUR = euros\n" +
                 "etc\n");
 
         do{
             System.out.println("\n...presione 3 para regresar al menu principal\n");
             Scanner keyboardInput = new Scanner(System.in);
             menuCtrl = keyboardInput.nextInt();
-            if (menuCtrl == 3){
-                menuCtrl = 0;
-            }
-        }while(menuCtrl != 0);
+        }while(menuCtrl != 3);
     }
 }
