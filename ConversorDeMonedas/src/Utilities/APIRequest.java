@@ -1,3 +1,5 @@
+package Utilities;
+
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -18,7 +20,7 @@ public class APIRequest {
 
     //METHODS
 
-    CurrencyExchange Request() {
+    public static CurrencyExchange Request() {
         Scanner keyboardInput = new Scanner(System.in);
         System.out.println("Escriba su moneda actual");
         yourCurrencyString = keyboardInput.nextLine();
