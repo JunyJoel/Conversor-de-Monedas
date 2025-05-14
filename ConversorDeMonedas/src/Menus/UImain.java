@@ -1,7 +1,7 @@
-package Menu;
+package Menus;
 
 import Utilities.Calculos;
-import javax.swing.text.Utilities;
+
 import java.util.Scanner;
 
 public class UImain {
